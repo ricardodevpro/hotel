@@ -55,7 +55,7 @@ header li a:hover {
     transition: .5s;
 }
 
-@media (max-width: 700px){
+@media (max-width: 600px){
     header{
         flex-direction: column;
     }
@@ -101,7 +101,7 @@ header li a:hover {
     transition: .5s;
 }
 
-@media (max-width: 700px){
+@media (max-width: 600px){
     
     .hero {
         background-image: url(../image/one.png);
@@ -183,7 +183,12 @@ header li a:hover {
     flex-basis: 60%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
+    .conheça-o-hotel h3 {
+        width: 250px;
+        text-align: center;
+    }
+    
     .conheça-o-hotel .grid li.small1, .conheça-o-hotel .grid li.small2, .conheça-o-hotel .grid li.large1, .conheça-o-hotel .grid li.large2  {
         flex-basis: 100%;
     }
@@ -304,16 +309,90 @@ header li a:hover {
     border-radius: 5px;
 }
 
+@media (max-width: 600px) {
+    .newsletter {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        padding: 100px 30px;
+    }
+    .newsletter h3 {
+        font-size: 2em;
+        margin-bottom: 35px;
+        text-align: center;
+        color: #c3c63b;
+    }
+    
+    .newsletter p {
+        text-align: center;
+        margin-bottom: 35px;
+        width: 300px;
+        color:#c3c63b;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6)
+    }
+    
+    .newsletter hr {
+        margin-bottom: 50px;
+        width: 200px;
+        text-align: center;
+        height: 2px;
+        border: none;
+        background-color: #c3c63b;
+    }
+    
+    .newsletter form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .newsletter input {
+        margin-right: 20px;
+        border: 1px solid #c3c63b;
+        padding: 10px;
+        border-radius: 5px;
+    
+    }
+    
+    .newsletter button {
+        padding: 10px;
+        background-color: #c3c63b;
+        color: #191c03;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+}
+}
+
 /* FOOTER */
 
 .rodape {
-    background-color: #191c03;
     display: flex;
+    flex-direction: column;
+    background-color: #191c03;
+    padding: 50px 0px;
     color: white;
-    columns: 2;
+    align-items: center;
+    transition: .3s;
+}
+
+.card ul {
+    display: flex;
+    gap: 10px;
+}
+
+.card ul li {
+    margin-right: 10px;
+}
+
+.card ul li:last-child{
+    margin-right: 0px;
 }
 .card p {
     margin-left: 150px;
+    width: 150px;
+    text-align: center;
 }
 
 .card {
@@ -388,7 +467,7 @@ header li a:hover {
   }
   
 
-  @media (max-width: 700px) {
+  @media (max-width: 600px) {
         .rodape {
             display: flex;
             justify-content: center;

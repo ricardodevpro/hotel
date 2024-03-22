@@ -156,7 +156,6 @@ header li a:hover {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .conheça-o-hotel .grid li {
@@ -168,16 +167,24 @@ header li a:hover {
     background-position: center center;
 }
 
-.conheça-o-hotel .grid li.small {
+.conheça-o-hotel .grid li.small1 {
     flex-basis: 40%;
 }
 
-.conheça-o-hotel .grid li.large {
+.conheça-o-hotel .grid li.small2 {
+    flex-basis: 40%;
+}
+
+.conheça-o-hotel .grid li.large1 {
+    flex-basis: 60%;
+}
+
+.conheça-o-hotel .grid li.large2 {
     flex-basis: 60%;
 }
 
 @media (max-width: 700px) {
-    .conheça-o-hotel .grid li.small, .conheça-o-hotel .grid li.large {
+    .conheça-o-hotel .grid li.small1, .conheça-o-hotel .grid li.small2, .conheça-o-hotel .grid li.large1, .conheça-o-hotel .grid li.large2  {
         flex-basis: 100%;
     }
 }

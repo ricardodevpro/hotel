@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: "Poppins"
+}
+
+li {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+header{
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    
+}
+
+img#logo{
+    width: 100px;
+}
+
+header nav{
+    display: flex;
+    gap: 15px;
+}
+
+header li a {
+    color: #191c03;
+    transition: .3s;
+    
+}
+
+header li a:hover {
+    font-size: 17px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+}
+
+/* ENTRADA */
+
+.hero {
+    background-image: url(../image/one.png);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.hero h1{
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero .botao {
+    background-color: #fff;
+    color: #191c03;
+    border-radius: 12px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.hero .botao:hover {
+    transition: .5s;
+}
+
+@media (max-width: 700px){
+    
+    .hero {
+        background-image: url(../image/one.png);
+        background-position: center center;
+    }
+    
+    .hero h1{
+        font-size: 1.3em;
+    }
+
+    .hero h2{
+        font-size: 1em;
+    }
+
+    .hero .botao {
+        padding: 5px 10px;
+    }
+}
+
+/* CONHEÇA O HOTEL*/
+
+.conheça-o-hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.conheça-o-hotel h3 {
+    font-size: 2em;
+    margin-bottom: 35px;
+    color: #191c03;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.conheça-o-hotel p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #191c03;
+    text-align: center;
+}
+
+.conheça-o-hotel hr{
+    width: 200px;
+    height: 2px;
+    background-color: #191c03;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.conheça-o-hotel .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.conheça-o-hotel .grid li {
+    height: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center center;
+}
+
+.conheça-o-hotel .grid li.small {
+    flex-basis: 40%;
+}
+
+.conheça-o-hotel .grid li.large {
+    flex-basis: 60%;
+}
+
+@media (max-width: 700px) {
+    .conheça-o-hotel .grid li.small, .conheça-o-hotel .grid li.large {
+        flex-basis: 100%;
+    }
+}
+
+/* CARACTERÍSTICAS */
+
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: #191c03;
+}
+
+.caracteristicas h3 {
+    font-size: 2em;
+    margin-bottom: 35px;
+    color: #fff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.caracteristicas p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+.caracteristicas hr{
+    width: 200px;
+    height: 2px;
+    background-color: #191c03;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.caracteristicas .grid {
+    width: 100%;
+    display: flex;
+}
+
+.caracteristicas li {
+    padding: 0px 30px;
+    text-align: center;
+    color: #c3c63b;
+}
+
+.caracteristicas li span {
+    color: #c3c63b; 
+    font-size: 3.5em;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 850px) {
+    .caracteristicas .grid {
+        flex-direction: column;
+    }
+
+    .caracteristicas h3 {
+        text-align: center;
+    }
+}
+
+/* NEWSLATTER */
+
+.newsletter {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 100px 50px;
+}
+.newsletter h3 {
+    font-size: 2em;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #c3c63b;
+}
+
+.newsletter p {
+    text-align: center;
+    margin-bottom: 35px;
+    width: 400px;
+    color:#c3c63b;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6)
+}
+
+.newsletter hr {
+    margin-bottom: 50px;
+    width: 200px;
+    text-align: center;
+    height: 2px;
+    border: none;
+    background-color: #c3c63b;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter input {
+    margin-right: 30px;
+    border: 1px solid #c3c63b;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.newsletter button {
+    padding: 10px;
+    background-color: #c3c63b;
+    color: #191c03;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+
+.rodape {
+    background-color: #191c03;
+    display: flex;
+    color: white;
+    columns: 2;
+}
+.card p {
+    margin-left: 150px;
+}
+
+.card {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+    border-radius: 50%;
+}
+    /* linkdin*/
+  .containerOne:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+    /* github*/
+  .containerTwo:hover {
+    background-color: #010409;
+    transition-duration: .3s;
+  }
+    /* instagram*/
+  .containerThree:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 15px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+  @media (max-width: 700px) {
+        .rodape {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 30px;
+            gap: 20px;
+            flex-wrap: wrap;
+            columns: 2;
+        }
+
+        .card p {
+            margin: 0px 100px;
+            width: 200px;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .socialContainer {
+            width: 45px;
+            height: 40px;
+            background-color: rgb(44, 44, 44);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition-duration: .3s;
+            border-radius: 50%;
+        }
+        .socialSvg {
+            width: 20px;
+          }
+  }
+  

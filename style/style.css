@@ -101,7 +101,7 @@ header li a:hover {
     transition: .5s;
 }
 
-@media (max-width: 600px){
+@media (min-width: 576px){
     
     .hero {
         background-image: url(../image/one.png);
@@ -382,15 +382,8 @@ header li a:hover {
     gap: 10px;
 }
 
-.card ul li {
-    margin-right: 10px;
-}
 
-.card ul li:last-child{
-    margin-right: 0px;
-}
 .card p {
-    margin-left: 150px;
     width: 150px;
     text-align: center;
 }
@@ -467,29 +460,27 @@ header li a:hover {
   }
   
 
-  @media (max-width: 600px) {
+  @media (min-width: 597px) {
+        .newsletter {
+            width: 300px;
+        }
+
         .rodape {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 300px;
         }
 
         .card {
-            background-color: transparent;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 300px;
+            background-color: transparent;
             padding: 30px 30px;
             gap: 20px;
-            flex-wrap: wrap;
-            columns: 2;
         }
 
         .card p {
-            margin: 0px 100px;
             width: 200px;
             font-size: 13px;
-            text-align: center;
         }
 
         .socialContainer {

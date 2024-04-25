@@ -5,10 +5,7 @@
     padding: 0px;
     font-size: 100%;
     box-sizing: border-box;
-    font-family: "Poppins"
-}
-
-li {
+    font-family: "Poppins";
     list-style-type: none;
 }
 
@@ -23,15 +20,12 @@ a:hover{
 }
 
 header{
-    background-color: #fff;
-    width: 100%;
-    position: absolute;
-    top: 0; left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
+    width: 100%;
     padding: 20px 50px;
-    
 }
 
 img#logo{
@@ -44,15 +38,16 @@ header nav{
 }
 
 header li a {
+    transition: all .1s;
+    transform: translateY(0);
     color: #191c03;
-    transition: .3s;
     
 }
 
 header li a:hover {
-    font-size: 17px;
-    font-weight: 600;
-    transition: .5s;
+    transition: all .1s;
+    transform: translateY(10px);
+   font-weight: 700;
 }
 
 @media (max-width: 600px){
@@ -76,7 +71,7 @@ header li a:hover {
     text-align: center;
 }
 .hero h1{
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 15px;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
 }
@@ -349,13 +344,13 @@ header li a:hover {
     .newsletter input {
         margin-right: 20px;
         border: 1px solid #c3c63b;
-        padding: 10px;
+        padding: 5px;
         border-radius: 5px;
     
     }
     
     .newsletter button {
-        padding: 10px;
+        padding: 5px;
         background-color: #c3c63b;
         color: #191c03;
         font-weight: 600;
@@ -393,12 +388,12 @@ header li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px 25px;
+    padding: 25px 0px;
     gap: 20px;
-  }
-  
-  /* for all social containers*/
-  .socialContainer {
+}
+
+/* for all social containers*/
+.socialContainer {
     width: 40px;
     height: 40px;
     background-color: rgb(44, 44, 44);
